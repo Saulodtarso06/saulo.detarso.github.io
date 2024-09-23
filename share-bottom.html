@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartilhar nas Redes Sociais</title>
+
+    <style>
+        .share-btn-tweeter {
+            background-color: #1DA1F2; /* Cor do Twitter */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .share-btn-tweeter:hover {
+            background-color: #0d8aec; 
+        }
+    </style>
+
+    <style>
+        .share-btn-facebook {
+            background-color: #1d32f2; /* Cor do Facebook */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .share-btn-facebook:hover {
+            background-color: #1d32f2; 
+        }
+    </style>
+
+        <style>
+            .share-btn-github {
+                background-color: #040505; /* Cor do github */
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+            .share-btn-github:hover {
+                background-color: #040505; 
+            }
+        </style>
+</head>
+<body>
+
+    <button class="share-btn-tweeter" onclick="shareOnTwitter()">Compartilhar no Twitter</button>
+
+    <script>
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href); // Pega a URL da página
+            const text = encodeURIComponent("Confira este site incrível!"); // Texto a ser compartilhado
+            const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+            window.open(twitterUrl, '_blank');
+        }
+    </script>
+
+<button class="share-btn-facebook" onclick="shareOnFacebook()">Compartilhar no Facebook</button>
+
+<script>
+    function shareOnFacebook() {
+        const url = encodeURIComponent(window.location.href); // Pega a URL da página
+        const facebookUrl = `https://www.facebook.com/saulode.tarso.180`;
+        window.open(facebookUrl, '_blank');
+    }
+</script>
+
+<button class="share-btn-github" onclick="shareOnGitHub()">Compartilhar no GitHub</button>
+
+<script>
+    function shareOnGitHub() {
+        const repoUrl = 'https://github.com/Saulodtarso06'; // Substitua pela URL do repositório
+        const githubUrl = `https://github.com/Saulodtarso06`;
+        window.open(githubUrl, '_blank');
+    }
+</script>
+
+<ion-icon name="home"></ion-icon>
+
+
+
+</body>
+</html>
