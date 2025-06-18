@@ -1,7 +1,5 @@
 # 🌐 Portfólio - Saulo de Tarso
 
-![screenshot](img/profile.jpg)
-
 Este é o meu portfólio pessoal online, uma landing page desenvolvida com HTML5, CSS3 e JavaScript puro (vanilla). O objetivo é apresentar um resumo das minhas habilidades, experiências e principais projetos como desenvolvedor Full-Stack Júnior.
 
 ---
