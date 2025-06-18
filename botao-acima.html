@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Top</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            height: 1500px; /* Apenas para mostrar o efeito de rolagem */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Estilo do botão */
+        #scrollTopButton {
+            display: none; /* Oculto inicialmente */
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #scrollTopButton:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <button id="scrollTopButton">Topo</button>
+
+    <script>
+        // Referência ao botão
+        const scrollTopButton = document.getElementById('scrollTopButton');
+
+        // Função para mostrar/ocultar o botão com base na posição de rolagem
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        };
+
+        // Função para rolar para o topo ao clicar no botão
+        scrollTopButton.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>

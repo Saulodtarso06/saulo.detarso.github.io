@@ -1,0 +1,11 @@
+Resenha do portifolio
+
+01 - menu principal
+02 - Sobre mim: breve resumo
+03 - <!--Most Evident Projects-->
+	03.1 - divido em grade 5 x 3 (4 postados no Linkedin com video, todos
+	postados no github)
+	
+	03.02 - Cada projeto deve ter um link para acesso direto ao repositorio online
+	
+04 - Minhas Skills

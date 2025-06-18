@@ -6,6 +6,7 @@
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
+
 /* Variables */
 :root {
   --main-color: #54B689;
@@ -185,6 +186,28 @@
   margin-right: 10px;
 }
 
+#top{
+  position: fixed;
+  bottom: 0;
+  padding: auto;
+  margin: 5rem;
+}
+
+#top.hide-top{
+  display: none;
+}
+
+#top.show-top{
+  display: block;
+}
+
+#top i{
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+  color: var(--text-color);
+  background: var(--main-color);
+}
 /* Mobile */
 @media(max-width: 450px) {
 

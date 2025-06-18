@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon_io/favicon-16x16.png" type="image/png">
     <title>Portfólio Saulo de Tarso</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+
+    <!-- Dev Icon Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+    <!-- CSS do Projeto -->
+    <link rel="stylesheet" href="css/styles.css">
+
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
         .share-btn-github {
-            background-color: #040505; /* Cor do botao github */
+            background-color: #040505;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -15,132 +32,178 @@
             border-radius: 5px;
             font-size: 16px;
         }
+
         .share-btn-github:hover {
-            background-color: #040505; 
+            background-color: #202020;
+        }
+
+        #scrollTopButton {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #83068f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #scrollTopButton:hover {
+            background-color: #555;
+        }
+
+        .icone-certificado {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .icone-certificado img {
+            width: 48px;
+            height: 48px;
+        }
+
+        footer {
+            text-align: left;
+            padding: 20px;
         }
     </style>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
-
-    <!-- Dev Icon Fonts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-
-    <!-- CSS do Projeto -->
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <main id="container">
-    <aside id="bio-container">
-        <h2>Saulo de Tarso</h2>
-        <img id="bio-image" src="img/profile.jpg" alt="Saulo de Tarso">
-        <p>E ai ? Tudo bom ?!, meu nome é Saulo de Tarso, sou <span class="highlight">Programador FullStack Jr</span>.</p>
-        <p id="welcome-text">Seja bem-vindo ao meu Portfólio online !</p>
-        <ul id="social-container">
+        <aside id="bio-container">
+            <h2>Saulo de Tarso</h2>
+            <img id="bio-image" src="img/profile.jpg" alt="Foto de Saulo de Tarso">
+            <p id="welcome-text">console.log ("Coding ...");</p>
+                
+            <p class="description">
+                💻dev jr fullstack
+            <br>🎓 ADS - UniBH.</br>
+                🚩 Belo Horizonte - MG
+            </p>
 
-        <!--<li><a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>-->
-        <!---->
+            <ul id="social-container">
+                <li><a href="https://br.linkedin.com/in/saulo-de-tarso-8a2b00133" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/saullo.detarso06/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
 
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:saulo.detarso06@yahoo.com.br">saulo.detarso06@yahoo.com.br</a>
+                <br></br>
+            </div>
 
-        <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <div class="icone-certificado">
+                <img src="icons/cisco.256x135.png" alt="Cisco Cybersecurity Essentials">
+                <span>Cybersecurity Essentials Course - Certificate</span>
+            </div>
 
-        </ul>
-        <div id="email-container">
-        <ion-icon name="mail-outline"></ion-icon>
-        <a href="mailto:saulo.detars06@yahoo.com.br">saulo.detars06@yahoo.com.br</a>
-        </div>
-    </aside>
+            <div class="icone-certificado">
+                <img src="icons/google-cloud.256x206.png" alt="Google Cloud Essentials">
+                <span>Google Cloud Essentials Course - Certificate</span>
+            </div>
+        </aside>
 
-    <section id="about-container">
-        <h1 id="name">Saulo de Tarso</h1>
+        <section id="about-container">
+            <h1 id="name">Resumo</h1>
+            <p id="title"><span class="highlight">Desenvolvedor Full-Stack Jr 👨‍💻</span></p>
 
-        <p id="title"><span class="highlight">Desenvolvedor Full-Stack</span></p>
-
-        <p class="description">Sou um desenvolvedor de software Jr focado em desenvolvimento        Full-Stack. Inicie meu desenvolvimento em 2022, no curso tecnólogo em Analise e Desenvolvimento de Sistemas pela UniBH – Estoril em Belo Horizonte - MG, sou curioso em novas tecnologias, adquiri um profundo conhecimento dos princípios e práticas em desenvolvimento de software.</p>
+            <p class="description">Sou um desenvolvedor de software Jr focado em desenvolvimento Full-Stack. Inicie meu desenvolvimento em 2022, no curso tecnólogo em Analise e Desenvolvimento de Sistemas pela UniBH – Estoril em Belo Horizonte - MG, sou curioso em novas tecnologias, adquiri um profundo conhecimento dos princípios e práticas em desenvolvimento de software.</p>
             
-        <p class="description">Minha principal especialização está em aplicações fullstack, nas quais utilizo meu conhecimento em JavaScript para criar aplicações, APIs, interfaces intuitivas utilizando o Figma e diversos outros tipos de soluções de software dentro de ambientes Linux / Windows.  </p> 
+        <p class="description">Minha principal habilidade está em desenvolver aplicações full-stack. Utilizo JavaScript para criar APIs, JSON, interfaces intuitivas (com experiência em Figma), operando em ambientes Windows e Linux.  </p> 
 
-        <p class="description">Enquanto aluno da UniBh, desenvolvi alguns projetos próprios baseados em Fullstack, como HTML / CSS / React, Node.Js, Javascript, MySQL, PHP, Java entre outros. Essas experiências aprimoraram minha capacidade de navegar por todo o ciclo de vida do desenvolvimento de software.</p>
+        <p class="description">Enquanto aluno da UniBh, desenvolvi alguns projetos Fullstack principalmente com Java 8.
+            Meu portfólio de projetos, tanto acadêmicos quanto pessoais, demonstra minha capacidade de transformar conceitos em soluções funcionais:</p>    
 
-        <span class="highlight">Sou ágil e consistente em aprender novas tecnologias, e me adaptar as mudanças, disposto a abraçar os próximos desafios!</span>.</p>
-        <br><br/>
+            <ul class="description">
+                <li>Projetos Full-Stack com Java 8</li>
+                <li>Landing Pages com HTML5, CSS3, JavaScript (Vanilla)</li>
+                <li>ChatBot com Flutter</li>
+                <li>CRUDs (com arquitetura MVC) feito em Java 8, PHP e integração com MySQL</li>
+                <li>Bots de Análise de Dados com Python (Web Scraping com Selenium), PyTube, Tkinter, Openai</li>
+            </ul>
 
-        <p class="description">Atuo tanto no <span class="highlight">front</span> como no <span class="highlight">back-end</span>, e amo tecnologia, estudo todos os dias para me tornar cada vez melhor e escrever código de qualidade.</p>
+            <p class="description">Essas experiências práticas me capacitaram a aprimorar minhas habilidades em análise de código e desenvolvimento de sistemas.</p>
 
-        <a href="#"><button class="share-btn-github" onclick="shareOnGitHub()"><b>Ver Projetos no GitHub  </b><ion-icon name="share-social-outline"></ion-icon></button></a>
+            <p><span class="highlight">Sou ágil para aprender novas tecnologias e me adaptar a mudanças. Estou pronto para os próximos desafios!</span></p>
 
-        <script>
-            function shareOnGitHub() {
-                const repoUrl = 'https://github.com/Saulodtarso06'; 
+            <p class="description">Atuo tanto no <span class="highlight">front-end</span> quanto no <span class="highlight">back-end</span>. Amo tecnologia e estudo todos os dias para evoluir.</p>
 
-                const githubUrl = `https://github.com/Saulodtarso06`;
-                window.open(githubUrl, '_blank');
-            }
-        </script>
-        <br><br/>
+            <button class="share-btn-github" onclick="window.open('https://github.com/Saulodtarso06', '_blank')">
+                <b>Ver Projetos no GitHub</b> <ion-icon name="share-social-outline"></ion-icon>
+            </button>
 
-        <!--<a href="#" id="btn-projects"><ion-icon name="share-social-outline"></ion-icon> <span>Ver Projetos no GitHub</span></a>-->
-        
-        <h2 id="skills-section-title">Minhas Skills</h2>
-        <p class="description">Conheça as tecnologias que domino:</p>
-        <div id="skills-container">
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p class="description">Tecnologias que domino:</p>
 
-        <div class="skills-box">
-            <p class="skills-title">Front-end</p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-        </div>
-        <div class="skills-box">
-            <p class="skills-title">Back-end</p>
-            <i class="devicon-php-plain colored"></i>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-python-plain colored"></i>
-        </div>
-        <div class="skills-box">
-            <p class="skills-title">Databases</p>
-            <i class="devicon-mysql-plain colored"></i>
-            <i class="devicon-mongodb-plain colored"></i>
-        </div>
-        <div class="skills-box">
-            <p class="skills-title">Front-end Frameworks</p>
-            <i class="devicon-react-plain colored"></i>
-            <i class="devicon-vuejs-plain colored"></i>
-        </div>
-        <div class="skills-box">
-            <p class="skills-title">Back-end Frameworks</p>
-            <i class="devicon-laravel-plain colored"></i>
-            <i class="devicon-django-plain colored"></i>
-        </div>
-        <div class="skills-box">
-            <p class="skills-title">Tools</p>
-            <i class="devicon-linux-plain colored"></i>
-            <i class="devicon-docker-plain colored"></i>
-        </div>
-        </div>
+            <div id="skills-container">
+                <div class="skills-box">
+                    <p class="skills-title">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Back-end</p>
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <i class="devicon-python-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Databases</p>
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Frameworks Front-end</p>
+                    <i class="devicon-react-plain colored"></i>
+                    <i class="devicon-vuejs-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Frameworks Back-end</p>
+                    <i class="devicon-laravel-plain colored"></i>
+                    <i class="devicon-django-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Ferramentas</p>
+                    <i class="devicon-linux-plain colored"></i>
+                </div>
+            </div>
 
-        <div>
-        <footer id= "rodape">
-            <p>
-                <h7 style="text-align: center">Portfólio_Online - S.T.N - 2024</h7>
-            </p>
-                <br><br/>
-            <p>Copyright &copy; 2024 - <h7 style="text-align: center">a Saulo de Tarso's Produtions<h7></p>
-                <br><br/>
-
-            <p>
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">Linkedin</a> |
-                <a href="https://github.com/Saulodtarso06" target="_blank">GitHub</a>
-            </p>
-        </footer>
-
-        </div>
-    </section>
+            <footer id="rodape">
+                <p>&copy; 2024 - a Saulo de Tarso’s Productions</p>
+                <p>
+                    <a href="https://br.linkedin.com/in/saulo-de-tarso-8a2b00133" target="_blank"><b>LinkedIn</b></a> |
+                    <a href="https://github.com/Saulodtarso06" target="_blank"><b>GitHub</b></a>
+                </p>
+            </footer>
+        </section>
     </main>
+
     <!-- Ion Icons -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
+    <button id="scrollTopButton"><b>Topo</b></button>
+    <script>
+        const scrollTopButton = document.getElementById('scrollTopButton');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopButton.style.display = "block";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+        };
+
+        scrollTopButton.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>
-
